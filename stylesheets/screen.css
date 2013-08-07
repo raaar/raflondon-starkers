@@ -1,7 +1,12 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+Theme Name: 	Starkers
+Theme URI: 		http://viewportindustries.com/products/starkers
+Description: 	The totally nude Wordpress theme!
+Version: 		4.0
+Author: 		Elliot Jay Stocks & Keir Whitaker
+Author URI: 	http://viewportindustries.com
+Tags: 			starkers, naked, clean, basic
+*/
 /* line 17, ../../../../../../../../Users/raffaelefacondini/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,3 +71,90 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/* line 35, ../sass/screen.scss */
+div,
+article,
+section,
+header,
+footer,
+nav,
+li {
+  position: relative;
+  /* For absolutely positioning elements within containers (add more to the list if need be) */
+}
+
+/* line 36, ../sass/screen.scss */
+.group:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  /* For clearing */
+}
+
+/* line 37, ../sass/screen.scss */
+body {
+  background: #fff;
+  /* Don't forget to style your body to avoid user overrides */
+}
+
+/* line 38, ../sass/screen.scss */
+::-moz-selection {
+  background: #ff0;
+  color: #333;
+}
+
+/* line 39, ../sass/screen.scss */
+::selection {
+  background: #ff0;
+  color: #333;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+/* line 57, ../sass/screen.scss */
+body,
+input,
+textarea {
+  /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */
+}
+
+/* line 64, ../sass/screen.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  /* This helps to identify headings at the initial build stage, but you should write something more precise later on */
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
